@@ -2,10 +2,10 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "sandbox-alz-root@threadingclouds.com"
-    AccountName               = "Sandbox"
-    ManagedOrganizationalUnit = "sandbox"
-    SSOUserEmail              = "sandbox-alz-root@threadingclouds.com"
+    AccountEmail              = "dev-alz-root@threadingclouds.com"
+    AccountName               = "Dev"
+    ManagedOrganizationalUnit = "workloads"
+    SSOUserEmail              = "dev-alz-root@threadingclouds.com"
     SSOUserFirstName          = "Giorgio"
     SSOUserLastName           = "AFT"
   }
@@ -20,8 +20,8 @@ module "sandbox" {
   }
 
   custom_fields = {
-    group = "non-prod"
+    group = "workloads"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "workloads"
 }
